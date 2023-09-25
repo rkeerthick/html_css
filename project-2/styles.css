@@ -51,8 +51,9 @@ a {
 } */
 
 .login {
-    border: 1px solid linear-gradient(pink, violet), radial-gradient(circle at top left, pink, orange);
-    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 1;
+    border-width: 4px;
+    border-style: solid;
 }
 
 .content-grid {

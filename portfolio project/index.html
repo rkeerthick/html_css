@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <script src="https://kit.fontawesome.com/d7d38f8343.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <div id="header">
-        <div class="container">
-            <nav class="navbar">
-                <img class="logo" src="./images/logo.png" alt="">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Service</a></li>
-                    <li><a href="#contact">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Developer</p>
-                <h1>Hi, I'm <span>Kevin</span>!</h1>
-            </div>
+      <div class="container">
+        <nav class="navbar">
+          <img class="logo" src="./images/logo.png" alt="" />
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Service</a></li>
+            <li><a href="#contact">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Developer</p>
+          <h1>Hi, I'm <span>Kevin</span>!</h1>
         </div>
+      </div>
     </div>
+
+    <!-- About -->
     <div id="about">
-        <div class="container">
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="./images/user.png" alt="">
-                </div>
-                <div class="about-content">
-                    <h1 class="about-title">About me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, veniam vero? Iusto rerum architecto dicta perspiciatis autem nobis rem consectetur. Aut unde molestias, repellat corporis ullam culpa adipisci vero ea.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="./images/user.png" alt="" />
+          </div>
+          <div class="about-content">
+            <h1 class="about-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Officiis, veniam vero? Iusto rerum architecto dicta perspiciatis
+              autem nobis rem consectetur. Aut unde molestias, repellat corporis
+              ullam culpa adipisci vero ea.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
+            <div id="skills" class="tab-contents active-tab">
+              <ul>
+                <li><span>Developer</span><br />Front-end Web Developer</li>
+                <li><span>UI/UX</span><br />Web Interface Developer</li>
+              </ul>
+            </div>
+            <div id="experience" class="tab-contents">
+              <ul>
+                <li>
+                  <span>Developer - current</span><br />Front-end Web Developer
+                </li>
+                <li><span>2020 - 2024</span><br />ABC pvt. ltd.</li>
+              </ul>
+            </div>
+            <div id="education" class="tab-contents">
+              <ul>
+                <li><span>2020- 2024</span><br />XYZ College of Engineering</li>
+                <li><span>2018-2020</span><br />Schooling</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+
+    <!-- Service -->
+    <div id="service">
+      <div class="container">
+        <h1 class="about-title">My Service</h1>
+        <div class="service-list">
+          <div>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quod? Similique, placeat. Impedit quisquam tempora, molestias dicta a facilis tenetur sapiente nobis? Tempora, culpa ut.</p>
+          </div>
+          <div>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quod? Similique, placeat. Impedit quisquam tempora, molestias dicta a facilis tenetur sapiente nobis? Tempora, culpa ut.</p>
+          </div>
+          <div>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quod? Similique, placeat. Impedit quisquam tempora, molestias dicta a facilis tenetur sapiente nobis? Tempora, culpa ut.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
 </html>

@@ -16,13 +16,15 @@
       <div class="container">
         <nav class="navbar">
           <img class="logo" src="./images/logo.png" alt="" />
-          <ul class="nav-links">
+          <ul id="sidebar" class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Service</a></li>
-            <li><a href="#contact">Portfolio</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
           </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <p>Developer</p>

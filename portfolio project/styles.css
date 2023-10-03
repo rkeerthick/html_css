@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #080808;
     color: #fff;
@@ -47,12 +51,11 @@ a {
     position: relative;
 }
 
-.nav-links li a:hover {
+/* .nav-links li a:hover {
     border-bottom: 2px solid #ff004f;
-}
+} */
 
-
-/* .nav-links a::after {
+.nav-links a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -61,11 +64,11 @@ a {
     left: 0;
     bottom: -6px;
     transition: 0.5s;
-} */
+}
 
-/* .nav-links a:hover::after {
+.nav-links a:hover::after {
     width: 100%;
-} */
+}
 
 .header-text {
     margin-top: 20%;
@@ -106,6 +109,10 @@ a {
 
 .about-content {
     flex-basis: 60%;
+}
+
+.about-content p {
+    color: lightgray;
 }
 
 .sub-title {
@@ -298,6 +305,7 @@ a {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-left {
@@ -382,4 +390,88 @@ form .btn2 {
 
 #footer i {
     color: #ff004f;
+}
+
+/* favicons */
+
+.fas {
+    display: none;
+}
+
+/* Media Query */
+
+@media(max-width: 600px) {
+    /* Header */
+
+    #header {
+        background-image: url(./images/phone-background.png);
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ease-in;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    /* About */
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-image, .about-content {
+        flex-basis: 100%;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+
+    #footer p {
+        font-size: 14px;
+    }
 }

@@ -368,3 +368,18 @@ form .btn2 {
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+#footer i {
+    color: #ff004f;
+}
